@@ -31,6 +31,9 @@ function getWeatherData() {
         },
         success: function(data) {
           console.log(data);
+          $("#windDirectionArrow").css({
+            'transform': 'rotate(' + data.hourly.winddirection_10m.pop() + 'deg)',
+          }); 
         },
         error: function() {
           console.log("open-meteo request error");
