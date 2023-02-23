@@ -1,6 +1,7 @@
 let coordinates = {
     lat: 0.0,
     lon: 0.0,
+    dir: 0.0
 }
 
 function getLocation() {
@@ -8,16 +9,18 @@ function getLocation() {
     navigator.geolocation.getCurrentPosition((position) => {
         coordinates.lat = position.coords.latitude;
         coordinates.lon = position.coords.longitude;
+        coordinates.dir = position.coords.heading;
         showPosition()
     });
   } else {
-    $("#coordinatesText").text("Geolocation not supported");
+    $("#coordinates-text").text("Geolocation not supported");
   }
 }
 
 function showPosition(position) {
-    let coordinatesString = "lat: " + coordinates.lat +  " - lon: " + coordinates.lon;
-    $("#coordinatesText").text(coordinatesString);
+    let coordinatesString = "lat: " + coordinates.lat +  " - lon: " + coordinates.lon  +  " - dir: " + coordinates.dir ;
+    $("#compass-direction-img").css({'transform': 'rotate(' + coordinates.dir + 'deg)'});
+    $("#coordinates-text").text(coordinatesString);
     console.log(coordinatesString);
 }
 
@@ -31,7 +34,7 @@ function getWeatherData() {
         },
         success: function(data) {
           console.log(data);
-          $("#windDirectionArrow").css({'transform': 'rotate(' + data.hourly.winddirection_10m.pop() + 'deg)'});
+          $("#wind-direction-img").css({'transform': 'rotate(' + data.hourly.winddirection_10m.pop() + 'deg)'});
           $("#wind-speed-text").text(data.hourly.windspeed_10m.pop() + 'km/h');
         },
         error: function() {
@@ -42,7 +45,7 @@ function getWeatherData() {
 
 $(document).ready(function () {
 
-    $(document.getElementById("refreshButton")).click(function(event){
+    $(document.getElementById("refresh-button")).click(function(event){
         event.preventDefault();
         console.log("refresh");
         getLocation();

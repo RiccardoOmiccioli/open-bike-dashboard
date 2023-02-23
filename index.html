@@ -13,12 +13,15 @@
     <div class="grid-container">
       <div id="slope-div" class="grid-item"></div>
       <div id="wind-div" class="grid-item">
-        <img src="./images/marked_ring_small.svg" alt="wind direction" id="windDirectionArrow" class="measure-icon">
+        <img src="./images/marked_ring_small.svg" alt="wind direction" id="wind-direction-img" class="measure-icon">
         <p id="wind-speed-text" class="centered-text"></p>
       </div>
       <div id="nav-div" class="grid-item">
-        <p id="coordinatesText"> </p>
-        <button type="button" id="refreshButton">Refresh data</button>
+        <img src="./images/marked_ring_big.svg" alt="compass" id="compass-direction-img">
+        <div id="nav-overlay">
+          <p id="coordinates-text"> </p>
+          <button type="button" id="refresh-button">Refresh data</button>
+        </div>
       </div>
       <div id="speed-div" class="grid-item"></div>
       <div id="power-div" class="grid-item"></div>

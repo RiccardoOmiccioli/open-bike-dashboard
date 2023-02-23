@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1440 1440" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Compass" transform="matrix(1,0,0,1,-840,5.1692e-13)">
+        <path id="Compass-V2" serif:id="Compass V2" d="M1528.6,0.674C1538.99,0.227 1549.47,-0 1560,-0C1957.38,-0 2280,322.621 2280,720C2280,1117.38 1957.38,1440 1560,1440C1162.62,1440 840,1117.38 840,720C840,333.152 1145.75,17.151 1528.59,0.674L1528.59,0.674L1528.6,0.674ZM1532.1,25.551C1536.25,25.395 1540.06,27.823 1541.68,31.651C1544,37.125 1547.48,45.368 1550.79,53.202C1552.35,56.903 1555.98,59.309 1560,59.309C1564.02,59.31 1567.65,56.904 1569.21,53.202C1572.52,45.368 1576.01,37.125 1578.32,31.649C1579.94,27.821 1583.75,25.393 1587.91,25.549C1958.57,40.212 2255,345.761 2255,720C2255,1103.58 1943.58,1415 1560,1415C1176.42,1415 865,1103.58 865,720C865,345.761 1161.43,40.212 1532.1,25.551Z" style="fill:rgb(220,220,220);"/>
+    </g>
+</svg>

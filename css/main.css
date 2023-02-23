@@ -57,6 +57,16 @@ p {
     grid-row: span 2;
 }
 
+#nav-overlay {
+    position: relative;
+    top: -90%;
+    width: 100%;
+    height: 100%;
+    padding-top: 50%;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+
 #speed-div {
     grid-column: 1;
     grid-row: 2;
