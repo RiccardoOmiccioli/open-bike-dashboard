@@ -10,8 +10,18 @@
     <title>OpenBikeDashboard</title>
   </head>
   <body>
-    <p id="coordinatesText"> </p>
-    <button type="button" id="refreshButton">Refresh data</button>
-    <img src="./images/arrow.svg" alt="wind direction" id="windDirectionArrow" class="small-icon">
+    <div class="grid-container">
+      <div id="slope-div" class="grid-item"></div>
+      <div id="wind-div" class="grid-item">
+        <img src="./images/marked_ring_small.svg" alt="wind direction" id="windDirectionArrow" class="measure-icon">
+      </div>
+      <div id="nav-div" class="grid-item">
+        <p id="coordinatesText"> </p>
+        <button type="button" id="refreshButton">Refresh data</button>
+      </div>
+      <div id="speed-div" class="grid-item"></div>
+      <div id="power-div" class="grid-item"></div>
+
+    </div>
   </body>
 </html>
