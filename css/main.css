@@ -16,6 +16,7 @@ body {
 p {
     color: #DCDCDC;
     font-family: monospace;
+    font-size: 2em;
 }
 
 .measure-icon {
@@ -26,13 +27,19 @@ p {
     display: grid;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 50% 50%;
-    height:100vh;
+    height: 100vh;
 }
 
 .grid-item {
     width: 100%;
     border: 1px solid red;
     box-sizing: border-box;
+    text-align: center;
+}
+
+.centered-text {
+    position: relative;
+    top: -55%;
 }
 
 #slope-div {
